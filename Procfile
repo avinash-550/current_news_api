@@ -1,0 +1,1 @@
+web: gunicorn news_api_flask:app
