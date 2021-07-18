@@ -144,5 +144,5 @@ api.add_resource(allnews, '/allnews')
 api.add_resource(user_class, '/users')
 
 if __name__ == "__main__":
-    app.run(host = 'https://viwarriornewsapi.herokuapp.com')
+    app.run()
 
