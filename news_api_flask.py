@@ -11,11 +11,10 @@ from users import user
 import dateparser as dp
 import datetime
 import pytz
-
+ind = pytz.timezone('Asia/Kolkata')
 def utc_time(hour=0):
     utc = pytz.UTC
-    cur = datetime.datetime.now()-datetime.timedelta(hours= hour)
-    cur = cur.replace(tzinfo=utc)
+    cur = datetime.datetime.now(ind)-datetime.timedelta(hours= hour)
     
     return str(cur)
 
