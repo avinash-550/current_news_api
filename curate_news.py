@@ -23,7 +23,8 @@ class curater:
         
     def __get_past__(self, time_gap):
         # cal current utc time
-        curtime = datetime.datetime.now(pytz.utc)
+        ind = pytz.timezone('Asia/Kolkata')
+        curtime = datetime.datetime.now(ind)
         
         # cal 1 hour before time in UTC, 2 minutes less for large processing
         past_time = curtime - datetime.timedelta(hours = time_gap)
