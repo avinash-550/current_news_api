@@ -1,5 +1,5 @@
 # Current_news_api
-An api to fetch current new articles from across varied news sources. It uses mongodb for storing and retrieving data from news sources(including indian) parsed through rss feed.
+An api to fetch current new articles from across varied news sources. It uses mongodb for storing and retrieving data from news sources(indian) parsed through rss feed.
 
 
 # Entry points
