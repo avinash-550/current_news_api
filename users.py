@@ -15,9 +15,10 @@ class user:
         
     def gen_new_user(self):
         # To generate new user and add in db
+        ind = pytz.timezone('Asia/Kolkata')
        
         # time before no. of calls refresh
-        t = datetime.datetime.now() + datetime.timedelta(days =1) 
+        t = datetime.datetime.now(ind) + datetime.timedelta(days =1) 
         
         # to interact with db
         con = conn()
@@ -73,8 +74,9 @@ class user:
         
 
     def gen_devkey(self):
+        ind = pytz.timezone('Asia/Kolkata')
         # generates and returns developer unique key
-        return datetime.datetime.now().strftime('%Y%m%d%H%M%S%f')
+        return datetime.datetime.now(ind).strftime('%Y%m%d%H%M%S%f')
     
     def hash_code(self,string):
         # generates and returns hash of the given string
