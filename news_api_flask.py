@@ -74,8 +74,8 @@ class allnews(Resource):
         category = recieved_dict['category'].split(',')
         keywords = recieved_dict['keywords'].split(',')
         try:
-            up_date = dp.parse(recieved_dict['up_date']).replace(tzinfo =utc)
-            low_date = dp.parse(recieved_dict['low_date']).replace(tzinfo =utc)
+            up_date = dp.parse(recieved_dict['up_date'])
+            low_date = dp.parse(recieved_dict['low_date'])
         except:
             return {"error": "Wrong format for low_date and up_date"}, 200
         
