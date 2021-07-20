@@ -7,6 +7,7 @@ desc: to manage users of the api
 import datetime
 import hashlib
 from pymongo_client import conn
+import pytz
 
 class user:
     def __init__(self,email, pwd):
